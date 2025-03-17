@@ -2,30 +2,41 @@
 <html lang="en">
 <head>
 <title> Booking </title>
+<link rel="stylesheet" href="../css/style.css">
+<style>
+  .heading{
+    color:#2D336B ;
+  }
+  .card{
+    text-align: center;
+  }
+  .bts{
+      background-color:  #7886C7;
+      display: block;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      border:2px solid ;
+      color:#2D336B;
+      border-radius: 20px 20px;
+   }
+   .bts:hover{
+      box-shadow: 2px 2px grey;}
+</style>
+
 </head>
 <body>
-  <div>
-    <hr>
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="./../index.html">Home</a>&nbsp;&nbsp;
-    <a href="about.html">About</a>&nbsp;&nbsp;
-    <a href="service.html">Services</a>&nbsp;&nbsp;
-    <a href="destination.html">Destination</a>&nbsp;&nbsp;
-    <a href="booking.html">Booking</a>&nbsp;&nbsp;
-    <a href="contact.html">Contact</a>&nbsp;&nbsp;
-     <hr>
-  </div>
-    <h1>Book Your seat  </h1>
+  <div class="nav-bar">
+    <a class="nav-item"  href="./../index.html">Home</a>
+    <a class="nav-item" href="about.html">About</a>
+    <a class="nav-item" href="service.html">Services</a>
+    <a class="nav-item" href="destination.html">Destination</a>
+    <a class="nav-item" href="booking.html">Booking</a>
+    <a class="nav-item on-page" href="contact.html">Contact</a> 
+</div>
+    <h1 class="heading">Book Your seat  </h1>
+    <card >
    <form> 
     <label for="name"> Name :</label><br>
         <input id="name" type="text" placeholder="First Name" required>  
@@ -60,9 +71,9 @@
          <label> Special requests:</label><br>
          <input type="text"><br><br>
 
-         <b><h2> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Note : For Any Query <a href="contact.html">Contact Us</a>&nbsp;&nbsp;</h2></b>  
-
-       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<input type="submit">
+       
+       <button class="bts" > Submit</button>
+      </card>
 
     </form>
 
