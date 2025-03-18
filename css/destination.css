@@ -1,11 +1,12 @@
 .color{
     color: #7886C7;
     margin-left: 50px;
+    font-size: 25px;
 }
 .heading{
     margin-top: 50px;
     margin-bottom: 30px;
-    color: #2D336B;
+    color:#2D336B;
     text-align: center;
     vertical-align: top;
     font-size: 30px;}
@@ -29,4 +30,34 @@
     .bt1:hover {
         box-shadow: 1px 1px 3px 3px gray;
         }
+        .item {
+          width:300px;
+          height: 300px;
+          margin: 10px;
+          font-size: 50px;
+          padding: 10px;
+        }
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+        }
+        .img-2{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+        }
+        .img-1{
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 30px;
+        }
+        .p1{
+          padding: 10px 50px;
+          font-size: medium;
+        } 
+
+
+        
     

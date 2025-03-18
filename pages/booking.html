@@ -8,9 +8,16 @@
   .heading{
     color:#2D336B ;
   }
-  .card{
-    text-align: center;
-  }
+  .container{
+    
+    display:grid;
+     place-items: center;
+     padding: 10px ;
+     border: 2px solid #2D336B;;
+     background-color:hsla(234, 68%, 62%, 0.184);
+   }
+   
+
   .bts{
       background-color:  #7886C7;
       display: block;
@@ -27,6 +34,10 @@
   .booking-form{
     margin: 20px auto;
   }
+  .note{
+    text-align: center;
+  }
+  
 </style>
 
 </head>
@@ -38,37 +49,34 @@
     <a class="nav-item" href="destination.html">Destination</a>
     <a class="nav-item" href="booking.html">Booking</a>
     <a class="nav-item on-page" href="contact.html">Contact</a> 
+    
 </div>
+<div class="container">
     <h1 class="heading">Book Your seat  </h1>
-    <card >
-    <a class="nav-item on-page" href="booking.html">Booking</a>
-    <a class="nav-item" href="contact.html">Contact</a> 
-  </div>
-    <h1>Book Your seat  </h1>
-  <div class="booking-form>
+   
    <form> 
-    <label for="name"> Name :</label><br>
+    <label for="name"> Name :</label>
         <input id="name" type="text" placeholder="First Name" required>  
         <input type="text" placeholder="Last name" required><br><br>
 
-        <label> Phone Number:</label><br>
+        <label> Phone Number:</label>
         <input type="number" required placeholder="number"><br><br>
 
-        <label> E-mail:</label><br>
+        <label> E-mail:</label>
         <input type="email" required placeholder="e-mail"><br><br>
 
-        <label> Arrival Date and Time:</label><br>
+        <label> Arrival Date and Time:</label>
         <input type="date" required>
         <input type="time" required><br><br>
 
 
-        <label>Journey From:</label><br>
+        <label>Journey From:</label>
        <input typr="text" placeholder="city name" required><br><br>
       
-       <label>Journey To:</label><br>
+       <label>Journey To:</label>
        <input typr="text" placeholder="city name" required><br><br>
 
-       <label for="roomtype"> Accommodation </label><br>
+       <label for="roomtype"> Accommodation </label>
          <select id="roomtype" required> 
             <option>Select</option>
             <option>Luxury Hotels:</option>
@@ -77,16 +85,15 @@
             <option>Guesthouses:</option>
          </select><br><br>
 
-         <label> Special requests:</label><br>
+         <label> Special requests:</label>
          <input type="text"><br><br>
        
        <button class="bts" > Submit</button>
-      </card>
+      </div>
 
-         <b><h2> Note : For Any Query <a href="contact.html">Contact Us</a></h2></b>  
+         <b><h2 class="note"> Note : For Any Query <a href="contact.html">Contact Us</a></h2></b>  
 
-       <input type="submit">
-
+      
     </form>
   </div>
 
